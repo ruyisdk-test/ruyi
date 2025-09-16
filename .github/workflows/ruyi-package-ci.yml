@@ -12,7 +12,7 @@ jobs:
       - name: Trigger ruyi-package-ci
         env:
           GH_TOKEN: ${{ secrets.RUYI_PACKAGE_CI_TOKEN }}
-          TARGET_REPO: ruyisdk/ruyi-package-ci
+          TARGET_REPO: ruyisdk-test/ruyi-package-ci
           TARGET_REF: master
           WORKFLOW: deb.yml
           RUYI_DEB_REF: ${{ github.ref_name }}
