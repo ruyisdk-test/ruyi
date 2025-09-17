@@ -13,7 +13,7 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           token: ${{ secrets.PAT_RUYI_PACKAGE_CI }}
-          repo: ruyisdk/ruyi-package-ci
+          repo: ruyisdk-test/ruyi-package-ci
           ref: master
           workflow: deb.yml
           inputs: '{"ruyi_deb_ref": "${{ github.ref_name }}"}'
